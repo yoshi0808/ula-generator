@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 '''
 IPv6 Unique Local Address Generator (RFC4193)
-https://github.com/yoshi0808/Utils
+https://github.com/yoshi0808/ula_generator
 Copyright (c) 2020 Yoshi0808(Yoshinobu Abe)
 
 Released under the MIT license.
