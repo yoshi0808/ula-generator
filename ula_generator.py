@@ -62,7 +62,7 @@ def get_ntp64time_string():
 def main():
     mac_address = input_mac_address()
     if not mac_address:
-        print('Bad Mac Address')
+        print('Bad MAC Address')
     else:
         h = hashlib.sha1()
         # Make sha1 digest
