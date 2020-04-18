@@ -22,7 +22,7 @@ from datetime import datetime, date, timezone
 
 
 def input_mac_address():
-    mac_address = input('Input MAC address: ')
+    mac_address = input('Input MAC address:\n')
     result = re.match('^[0-9a-f]{2}([:-][0-9a-f]{2}){5}$', mac_address, re.I)
     if result:
         return mac_address
