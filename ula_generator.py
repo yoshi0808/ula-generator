@@ -22,7 +22,7 @@ from datetime import datetime, date, timezone
 
 
 def input_mac_address():
-    mac_address = input('Input MAC address:\n')
+    mac_address = input('Input MAC address: ')
     result = re.match('^[0-9a-f]{2}([:-][0-9a-f]{2}){5}$', mac_address, re.I)
     if result:
         return mac_address
@@ -72,7 +72,7 @@ def main():
         prefix = ':'.join(
             ('fd' + global_id[0:2], format(int(global_id[2:6], 16), 'x'),
              format(int(global_id[6:10], 16), 'x')))
-        print('ULA Prefix        -> ' + prefix + '::/48')
+        print('\n' + 'ULA Prefix        -> ' + prefix + '::/48')
         print('First Subnet      -> ' + prefix + '::/64')
         print('Last Subnet       -> ' + prefix + ':ffff::/64')
         print('First IPv6 Address-> ' + prefix + '::1/64')
